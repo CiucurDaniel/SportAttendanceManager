@@ -8,3 +8,6 @@ this is the main menu of the app
 <h2>Database design schema</h2>
 
 ![SQL Schema](DescriptionMedia/sql_schema.PNG?raw=true "SQL database design of the app")
+
+
+![RLDC arhitecture](DescriptionMedia/RLDC_Design_Arhtecture.jpg?raw=true "RLDC arhitecture")
