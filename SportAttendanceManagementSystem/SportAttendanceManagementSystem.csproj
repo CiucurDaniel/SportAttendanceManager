@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A3992D14-44D2-4FF9-8AEF-F9438B8538A2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SportAttendanceManagementSystem</RootNamespace>
+    <AssemblyName>SportAttendanceManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.3.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.3.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.6.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.6.1\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1400.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1400.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1400.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.18.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.18\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Renci.SshNet, Version=2016.1.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
+      <HintPath>..\packages\SSH.NET.2016.1.0\lib\net40\Renci.SshNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form_adaugare_prezenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_adaugare_prezenta.Designer.cs">
+      <DependentUpon>Form_adaugare_prezenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_adaugare_student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_adaugare_student.Designer.cs">
+      <DependentUpon>Form_adaugare_student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_grad_alegere_sport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_grad_alegere_sport.Designer.cs">
+      <DependentUpon>Form_grad_alegere_sport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_how_to_use.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_how_to_use.Designer.cs">
+      <DependentUpon>Form_how_to_use.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_main.Designer.cs">
+      <DependentUpon>Form_main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_meniu_rapoarte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_meniu_rapoarte.Designer.cs">
+      <DependentUpon>Form_meniu_rapoarte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_repartizari_sport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_repartizari_sport.Designer.cs">
+      <DependentUpon>Form_repartizari_sport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_sporturi_disponibile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_sporturi_disponibile.Designer.cs">
+      <DependentUpon>Form_sporturi_disponibile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_stare_promovare_studenti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_stare_promovare_studenti.Designer.cs">
+      <DependentUpon>Form_stare_promovare_studenti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_student_id.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_student_id.Designer.cs">
+      <DependentUpon>Form_student_id.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sportDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="Form_adaugare_prezenta.resx">
+      <DependentUpon>Form_adaugare_prezenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_adaugare_student.resx">
+      <DependentUpon>Form_adaugare_student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_grad_alegere_sport.resx">
+      <DependentUpon>Form_grad_alegere_sport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_how_to_use.resx">
+      <DependentUpon>Form_how_to_use.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_main.resx">
+      <DependentUpon>Form_main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_meniu_rapoarte.resx">
+      <DependentUpon>Form_meniu_rapoarte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_repartizari_sport.resx">
+      <DependentUpon>Form_repartizari_sport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_sporturi_disponibile.resx">
+      <DependentUpon>Form_sporturi_disponibile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_stare_promovare_studenti.resx">
+      <DependentUpon>Form_stare_promovare_studenti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_student_id.resx">
+      <DependentUpon>Form_student_id.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Raport_grad_de_alegere_sport.rdlc" />
+    <EmbeddedResource Include="Raport_stare_promovare_studenti.rdlc" />
+    <EmbeddedResource Include="Report_lista repartizari_sport.rdlc" />
+    <EmbeddedResource Include="Report_sporturi_disp.rdlc" />
+    <EmbeddedResource Include="Report_student_id.rdlc" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="sportDataSet.xsc">
+      <DependentUpon>sportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="sportDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sportDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sportDataSet.xss">
+      <DependentUpon>sportDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
